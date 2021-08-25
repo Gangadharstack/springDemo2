@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="empBean" class="entity.Employee">
+   <property name="employeeId" value="1001"></property>
+   <property name="employeeName" value="gangadhar"></property>
+   <property name="addr" ref="addr"/>
+</bean>
+     <bean id="addr" class="entity.Address">
+     <property name="Houseno" value="10-15-234/D"></property>
+     <property name="StreetName" value="gandhi Nagar"></property>
+     <property name="City" value="rajahmundry"></property>
+</bean>       
+</beans>
